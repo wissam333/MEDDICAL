@@ -114,7 +114,7 @@
 /* Start background */
 .backimg{
     background-image: url(../assets/servicebackground-624357821235782.jpg);
-  background-position: left;
+  background-position: 60%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;

@@ -139,7 +139,7 @@ but not too long.</p>
 /* Start bakgroung */
 .backimg{
     background-image: url(../assets/singlenews-89759035325.jpg);
-  background-position: center;
+  background-position: 40%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50vh;

@@ -10,7 +10,13 @@
 *{
   box-sizing: border-box
 }
-@media (min-width: 768px) {
+@media (min-width: 1361px) {
+  body{
+    padding-top: 6%;
+  
+}
+}
+@media (max-width: 1360px) {
   body{
     padding-top: 11%;
   
@@ -24,6 +30,12 @@
 @media (max-width: 680px) {
   body{
     padding-top: 31%;
+  }
+  
+}
+@media (max-width: 400px) {
+  body{
+    padding-top: 70%;
   }
   
 }

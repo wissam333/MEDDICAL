@@ -163,5 +163,10 @@ export default {
     font-size: 1rem;
   }
 }
+@media (max-width:400px) {
+  .slider-card h5{
+    font-size: .7rem;
+  }
+}
  }
 </style>

@@ -44,7 +44,7 @@ Execellence, Trusted Care.      </p>
   </div>
   <hr>
   <div style="display: flex;justify-content: space-between;"> 
-  <div>
+  <div style="width: 50%;">
   <small>© 2021 Hospital’s name All Rights Reserved by PNTEC-LTD</small>
 </div >
   <div class="all-i-ic"> 

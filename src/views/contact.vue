@@ -97,7 +97,7 @@
 /* Start bakgroung */
 .backimg{
     background-image: url(../assets/contactus2222.jpg);
-  background-position: right;
+  background-position: 80%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 40vh;
