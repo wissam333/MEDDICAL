@@ -128,7 +128,7 @@
 margin-bottom: 5%;
 }
   .breadcrumb-1{
-    top: 25%;
+    top: 33%;
     left: 14%;
     position: absolute;
     
