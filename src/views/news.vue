@@ -205,7 +205,7 @@ but not too long.</p>
 <style scoped>
 /* Start bakgroung */
 .backimg{
-    background-image: url(../src/assets/news-54135254880.jpg);
+    background-image: url(../assets/news-54135254880.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

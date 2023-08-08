@@ -72,7 +72,7 @@
 <style scoped>
 /* start background */
 .backimg{
-    background-image: url(../src/assets/freechackupback-5431262.jpg);
+    background-image: url(../assets/freechackupback-5431262.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

@@ -117,7 +117,7 @@
 <style scoped>
 /* Start bakgroung */
 .backimg{
-    background-image: url(../src/assets/appointment-64326342243.jpg);
+    background-image: url(../assets/appointment-64326342243.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;

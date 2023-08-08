@@ -94,7 +94,7 @@ export default{
 <style scoped>
 /* Start bakgroung */
 .backimg{
-    background-image: url(../src/assets/aboutus-54135133416526324642364.jpg);
+    background-image: url(..\assets\aboutus-54135133416526324642364.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

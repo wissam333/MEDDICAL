@@ -96,7 +96,7 @@
 <style scoped>
 /* Start bakgroung */
 .backimg{
-    background-image: url(../src/assets/contactus2222.jpg);
+    background-image: url(../assets/contactus2222.jpg);
   background-position: right;
   background-repeat: no-repeat;
   background-size: cover;

@@ -113,7 +113,7 @@
 <style scoped>
 /* Start background */
 .backimg{
-    background-image: url(../src/assets/servicebackground-624357821235782.jpg);
+    background-image: url(../assets/servicebackground-624357821235782.jpg);
   background-position: left;
   background-repeat: no-repeat;
   background-size: cover;
