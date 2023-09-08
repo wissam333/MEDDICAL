@@ -161,6 +161,8 @@ font-weight: bold;
  .card22:hover{
   color: var(--Accent);
   background-color: var(--primary);
+  transition: all .3s;
+
 }
  /* End get in tech  */
 

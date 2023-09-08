@@ -1,8 +1,29 @@
+
 <script >
+
 export default{
-  data() {
-    
-    return{}
+  setup() {
+    function aAccordion(i){
+      var clickthis = document.querySelectorAll(".clickk")
+var hidethis = document.querySelectorAll(".hidet")
+
+
+  if (hidethis[i].style.display === "block") {
+    hidethis[i].style.display = "none";
+    } else {
+      hidethis[i].style.display = "block";
+    }
+  }
+
+  
+    return{
+      aAccordion,
+        }
+  },
+  methods(){
+   
+
+
   },
   mounted(){
     document.getElementById('searchIcon').onclick = function() {
@@ -35,9 +56,20 @@ var plapla = document.querySelector(".navbar-nav")
 plapla.addEventListener("click",e=>{
   $('.collapse').collapse('hide');
 })
-  }
+
+
+
+     
+      
+     
+    }
+   
+  
+  
 }
 </script>
+
+
 
 <template>
   <header class="fixed-top">
@@ -46,29 +78,33 @@ plapla.addEventListener("click",e=>{
     <div class="head">
     <!-- start head -->
       <div class="h"><h1><span>MED</span><span>DICAL</span></h1></div>
-      <div class="conten-hea">
+      <div class="conten-hea" >
       <div class="one-con">
-        <img src="../src/assets/call.png" class="d-block-10">
+        <img src="../src/assets/call.png" class="d-block-10" @click="aAccordion(0)">
         <div>
-          <p>Emergency<br>
-          <span>(237) 681-812-255</span></p><br>
+          <p ><span @click="aAccordion(0)"> Emergency </span><br>
+          <span  class="hidet">(237) 681-812-255</span></p>
+        </div>
+        
+      </div>
+      <div class="one-con ">
+        <img src="../src/assets/time.png" class="d-block-10"  @click="aAccordion(1)">
+        <div>
+          <p><span @click="aAccordion(1)">Work Hour </span><br>
+          <span class="hidet">09:00 - 20:00 Everyday</span></p>
         </div>
       </div>
-      <div class="one-con">
-        <img src="../src/assets/time.png" class="d-block-10">
+      <div class="one-con ">
+        <img src="../src/assets/locaion.png" class="d-block-10" @click="aAccordion(2)">
         <div>
-          <p>Work Hour <br>
-          <span>09:00 - 20:00 Everyday</span></p>
+          <p><span @click="aAccordion(2)">Location</span> <br>
+          <span class="hidet"> Some Place</span></p>
         </div>
       </div>
-      <div class="one-con">
-        <img src="../src/assets/locaion.png" class="d-block-10">
-        <div>
-          <p>Location <br>
-          <span> Some Place</span></p>
-        </div>
-      </div>
+     
     </div>
+
+    
     </div>
     <!-- End head -->
     <div style="display: flex;"></div>
@@ -169,6 +205,13 @@ h1 {
   color: var(--primary);
   font-weight: bold;
 }
+.delay-1500 {
+  animation-name: move;
+  animation-delay: 1500ms;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  transition: 0.4s;}
+
 /* End head */
 
 /* Start nav */
@@ -202,6 +245,8 @@ font-weight: bold;
 }
 .navbar form .appointment button:hover , .caring-first button:hover ,.article .art1  button:hover{
   background-color: var(--secondery);
+  transition: all .3s;
+
 }
 
 
@@ -212,6 +257,8 @@ font-size: 20px;
 }
 .navbar-nav .nav-item .nav-link:hover {
   color: var(--Accent);
+  transition: all .3s;
+
 }
 .navbar-nav .nav-item .nav-link.active {
   color: var(--Accent);
@@ -257,6 +304,8 @@ font-size: 20px;
 }
 #clear:hover {
   cursor: pointer;
+  transition: all .3s;
+
 }
 /* search-icon */
 
@@ -283,7 +332,34 @@ font-size: 20px;
 }
 }
 
+@media (min-width: 768px) {
+  .hidet{
+    display: block;
+    transition: all 4s;
+  }
+  
+  
+
+}
+@media (max-width: 768px) {
+  .head .conten-hea .one-con{
+  cursor: pointer;
+  padding-bottom: 10px;
+}
+.hidet{
+  display: none;
+  overflow: hidden;
+    transition: all 4s;
+  }
+  .one-con:hover{
+      opacity: .7;
+      transition: all .6s;
+
+    }
+
+}
+
 
 /* End responsive */
-
 </style>
+

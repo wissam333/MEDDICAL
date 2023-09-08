@@ -167,6 +167,9 @@ color: var(--secondery);
 .img-text p span{
   margin: 5px;
 }
+.img-text p span img {
+  margin-right: 5px;
+}
 </style>
 
 <script>

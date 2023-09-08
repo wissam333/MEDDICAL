@@ -191,9 +191,13 @@
 }
 .card-img:hover .overlay {
     display: block;
+    transition: all .5s;
+
 }
 .card-img:hover .firs-chaeke .chek {
     display: none;
+    transition: all .5s;
+
 }
 @media  (max-width:768px) {
  

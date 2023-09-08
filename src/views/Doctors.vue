@@ -174,6 +174,8 @@ margin-bottom: 5%;
 }
 .slider-card2 button:hover{
   background-color: var(--secondery);
+  transition: all .3s;
+
 
 }
 

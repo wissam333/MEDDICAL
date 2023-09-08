@@ -141,6 +141,8 @@ export default {
 }
 .slider-card button:hover{
   background-color: var(--secondery);
+  transition: all .3s;
+
 
 }
 

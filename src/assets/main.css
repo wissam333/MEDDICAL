@@ -5,12 +5,13 @@
   --Accent:#BFD2F8;
   --firstfont:'Yeseva One', cursive;
   --secendfont:'Work Sans', sans-serif;
-}
+    --height: x;
+  }
 
 *{
   box-sizing: border-box
 }
-@media (min-width: 1362px) {
+/* @media (min-width: 1362px) {
   body{
     padding-top: 11%;
   
@@ -44,7 +45,74 @@
     padding-top: 70%;
   }
   
+} */
+body{
+  padding-top: var(--height);
 }
+
+/* @media (max-height: 400px) {
+  body{
+    padding-top: 50vh;
+  }
+}
+@media (min-height: 400px) {
+  body{
+    padding-top: 34vh;
+  }
+}
+@media (min-height: 600px) {
+  body{
+    padding-top: 23vh;
+  }
+}
+@media (min-height: 700px) {
+  body{
+    padding-top: 19vh;
+
+  }
+}
+@media (min-height: 800px) {
+  body{
+    padding-top: 14vh;
+
+  }
+}
+@media (min-height: 1000px) {
+  body{
+    padding-top: 13vh;
+
+  }
+}
+@media (min-height: 1200px) {
+  body{
+    padding-top: 11vh;
+
+  }
+}
+@media (min-height: 1400px) {
+  body{
+    padding-top: 9vh;
+
+  }
+}
+@media (min-height: 1800px) {
+  body{
+    padding-top: 8vh;
+
+  }
+}
+@media (min-height: 2000px) {
+  body{
+    padding-top: 7vh;
+
+  }
+}
+@media (min-height: 2300px) {
+  body{
+    padding-top: 6vh;
+
+  }
+} */
 .owl-nav .owl-prev {
   position: absolute;
   top: calc(50% - 25px);

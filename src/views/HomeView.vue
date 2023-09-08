@@ -26,7 +26,7 @@ export default{
     flatpickr(".form-control", {});
 
 
-
+   
 
 
   }
@@ -38,6 +38,7 @@ export default{
 <template>
   <!-- start background -->
  <div class="caring-for-life">
+  <div class="overlay" style="opacity: .3;"></div>
   <div class="caring-first col-6">
     <p>CARING FOR LIFE</p>
     <h1>Leading the way <br>
@@ -433,15 +434,20 @@ padding: 8px;
 }
 .care-box .box-first div:last-child button:hover , .book-a-appointment .p2 .form-submit:hover{
 background-color: var(--secondery);
+transition: all .3s;
+
 }
 
 .care-box .al-v div:hover , .box-card  .onbox:hover,.card22:hover{
   color: var(--Accent);
   background-color: var(--primary);
+  transition: all .3s;
 }
 
 .care-box .al-v div:hover img , .box-card  .onbox:hover img,.card22:hover img{
   filter:grayscale(100%) !important;
+  transition: all .3s;
+
 }
 
 .box-patients{
@@ -467,7 +473,7 @@ background-color: var(--secondery);
 }
 
 .box-patients .pear-circle {
-  padding: 15px;
+  padding: 15px 0px 15px 0;
   margin-left: 10px;
   text-align: left;
 }
@@ -476,6 +482,8 @@ font-size: 16px;
     font-weight: bold;
     padding: 0px 0px 8px 0px;
     width: 115%;
+    align-items: center;
+    display: flex;
   }
 /* End care you can beleve in */
 
@@ -515,6 +523,7 @@ font-size: 16px;
   background-size: cover;
   height: 100%;
   position: relative;
+  padding: 20px;
  }
  .overlay{
 position: absolute;
@@ -547,7 +556,7 @@ z-index: 0;
   text-transform: uppercase;
   border: .5px solid white;
   outline: 0;
-  
+  margin: -1px;
 }
 
 
@@ -612,18 +621,30 @@ background-position: top left 75%;
   .welcome-to-med .smoll-card{
     display: none;
   }
-  .you-can-beleve-in .care-box {
+  
+
+ 
+
+}
+
+@media (max-width: 470px) {
+  .al-card .onbox{
+    overflow: scroll;
+
+  }
+}
+@media (max-width: 1000px) {
+  .box-card .line{
     flex-direction: column;
   }
-  .you-can-beleve-in .care-box .box-first ,  .you-can-beleve-in .care-box .box-patients ,   .you-can-beleve-in .care-box .box-pac{
+  .al-card .onbox{ 
+  width: 50%;
+}
+.book-a-appointment .p1{
     width: 100%;
   }
-
-  .book-a-appointment .p1{
-    width: 90%;
-  }
   .book-a-appointment .p2{
-    width: 90%;
+    width: 100%;
   }
   .book-a-appointment .container {
   display: grid;
@@ -644,38 +665,11 @@ background-position: top left 75%;
 
 }
 
-@media (max-width: 470px) {
-  .al-card .onbox{
-    overflow: scroll;
-
-  }
-}
-@media (max-width: 1000px) {
-  .box-card .line{
-    flex-direction: column;
-  }
-  .al-card .onbox{ 
-  width: 50%;
-}
-
-}
-
 @media (min-width: 1000px) {
   .al-card .onbox{ 
   width: 25%;
 }
-
-}
-@media(min-width: 750px){
-  .caring-for-life{
-
-background-position:top right;
-  }
-  .caring-first{
-    top: 28%;
-    left: 13%;
-  }
-  .book-a-appointment .p1{
+.book-a-appointment .p1{
     width: 50%;
   }
   .book-a-appointment .p2{
@@ -697,8 +691,27 @@ background-position:top right;
 }
 
 }
+@media(min-width: 750px){
+  .caring-for-life{
 
+background-position:top right;
+  }
+  .caring-first{
+    top: 28%;
+    left: 13%;
+  }
+ 
 
+}
+
+@media (max-width: 1200px) {
+  .you-can-beleve-in .care-box {
+    flex-direction: column;
+  }
+  .you-can-beleve-in .care-box .box-first ,  .you-can-beleve-in .care-box .box-patients ,   .you-can-beleve-in .care-box .box-pac{
+    width: 100%;
+  }
+}
 
 
 

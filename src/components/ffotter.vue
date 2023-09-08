@@ -111,7 +111,7 @@ top: 6px;
 
 /* End footer */
 
-@media  (max-width:768px){
+@media  (max-width:1000px){
     .my-foo-tt{
   flex-direction: column;
 }
@@ -125,7 +125,7 @@ top: 6px;
   margin-top: 10%;
 }
 }
-@media  (min-width:768px) {
+@media  (min-width:1000px) {
     .las-al-lin-str .p{
   margin-top: 10%;
 }
